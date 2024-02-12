@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8232b600e9c06469fd3d74a0854a41, type: 3}
+  m_Name: ResourcesStorage
+  m_EditorClassIdentifier: Assembly-CSharp::ResourcesStorage
+  <GameAssets>k__BackingField:
+  - <AssetType>k__BackingField: 0
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: 20935fa00e06ec94f8d20f4fca2a0623
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - <AssetType>k__BackingField: 1
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: 7e899c8b4b62e15478a5e061875b03dc
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - <AssetType>k__BackingField: 2
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: a190d5ab9b3a01942885f4fd500ebcd6
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - <AssetType>k__BackingField: 3
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: 8915203681050cf41a02ff10e75d331a
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - <AssetType>k__BackingField: 4
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: 1cdcc3f44139f1940b7335c717b03b5c
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - <AssetType>k__BackingField: 5
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: 37c53d9618c64c646b52729e574b1cbb
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - <AssetType>k__BackingField: 6
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: 9e39bc496a4fa754fa9bf0f21ad73d25
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  <GameScenes>k__BackingField:
+  - <GameSceneType>k__BackingField: 1
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: 2b3c5f0b51e054b44a338e0445c18fea
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - <GameSceneType>k__BackingField: 2
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: e9cfdf0c0f0e57f4eab91dfb0973bf4e
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0

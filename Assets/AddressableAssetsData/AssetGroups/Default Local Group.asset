@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0fa1892d80148c847930e88d74d451a8
+  m_SerializeEntries:
+  - m_GUID: 2b3c5f0b51e054b44a338e0445c18fea
+    m_Address: Assets/Scenes/Lobby.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e9cfdf0c0f0e57f4eab91dfb0973bf4e
+    m_Address: Assets/Scenes/Gameplay.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 20935fa00e06ec94f8d20f4fca2a0623
+    m_Address: Assets/Loading/ScenePrefabs/Loc1_tutorial_prefab_levels/L01_LVL001.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1cdcc3f44139f1940b7335c717b03b5c
+    m_Address: Assets/Prefab/Enemy.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7e899c8b4b62e15478a5e061875b03dc
+    m_Address: Assets/Prefab/Hero/Hero.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 37c53d9618c64c646b52729e574b1cbb
+    m_Address: Assets/Prefab/Bullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8915203681050cf41a02ff10e75d331a
+    m_Address: Assets/Prefab/Hero/Body.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a190d5ab9b3a01942885f4fd500ebcd6
+    m_Address: Assets/Prefab/Hero/LobbyHero.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 9e39bc496a4fa754fa9bf0f21ad73d25
+    m_Address: Assets/Prefab/Weapon.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 8cd41db1105696e4aacb7bbcb2dec150, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ad8fe39edcfe5864d8b7497dd51a8e2b, type: 2}
+    - {fileID: 11400000, guid: 2b021ba11d6645449acfab8e375a62c9, type: 2}

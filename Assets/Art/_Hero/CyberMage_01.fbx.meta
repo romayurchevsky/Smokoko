@@ -1,0 +1,1751 @@
+fileFormatVersion: 2
+guid: 7553e796a777bcb4cb7dee237c8f0008
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cyber_mage
+    second: {fileID: 2100000, guid: ad7b316e6932d404e870da356e42bb36, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: root
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'attack_add_magic_orb' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'pelvis' has translation animation
+      that will be discarded.\n\t'pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\nClip 'attack_basic_hand' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'pelvis' has translation
+      animation that will be discarded.\n\t'pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'attack_gun' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'pelvis' has translation
+      animation that will be discarded.\n\t'pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'attack_staff' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'pelvis' has translation
+      animation that will be discarded.\n\nClip 'attack_wand' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'pelvis' has translation animation
+      that will be discarded.\n\t'pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\nClip 'Death' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'pelvis' has translation animation
+      that will be discarded.\n\t'pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\nClip 'idle' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'pelvis' has translation animation
+      that will be discarded.\n\t'pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\nClip 'idle_with_magic_staff'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'pelvis'
+      has translation animation that will be discarded.\n\t'pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'idle_with_magic_wand' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'pelvis'
+      has translation animation that will be discarded.\n\t'pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'idle_with_pistol' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'pelvis'
+      has translation animation that will be discarded.\n\t'pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'idle_with_shotgun' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'pelvis'
+      has translation animation that will be discarded.\n\t'pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'jump' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'pelvis'
+      has translation animation that will be discarded.\n\t'pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'run' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'pelvis'
+      has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: attack_add_magic_orb
+      takeName: attack_add_magic_orb
+      internalID: 400870694322429784
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.98367345
+        functionName: EndAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack_basic_hand
+      takeName: attack_basic_hand
+      internalID: 1819776170674538849
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack_gun
+      takeName: attack_gun
+      internalID: -7367618981505845835
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.47346938
+        functionName: EndAttack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack_staff
+      takeName: attack_staff
+      internalID: 5012111145677507757
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: attack_wand
+      takeName: attack_wand
+      internalID: -4489748540074705006
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Death
+      internalID: 4348485665485846014
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: idle
+      internalID: -5252816984213320552
+      firstFrame: 0
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle_with_magic_staff
+      takeName: idle_with_magic_staff
+      internalID: 5919705324415354199
+      firstFrame: 0
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle_with_magic_wand
+      takeName: idle_with_magic_wand
+      internalID: -5216046523852361952
+      firstFrame: 0
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle_with_pistol
+      takeName: idle_with_pistol
+      internalID: 746325693940384818
+      firstFrame: 0
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle_with_shotgun
+      takeName: idle_with_shotgun
+      internalID: -5144832583302746056
+      firstFrame: 0
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump
+      takeName: jump
+      internalID: -2993534804863918692
+      firstFrame: 0
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run
+      takeName: run
+      internalID: 6200578666267062213
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: t_pose
+      takeName: t_pose
+      internalID: -8968122031198121930
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cyber_mage_body
+        weight: 0
+      - path: Cyber_mage_eyes
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/pelvis
+        weight: 1
+      - path: root/pelvis/leg.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L
+        weight: 1
+      - path: root/pelvis/leg.L/shin.L/foot.L
+        weight: 1
+      - path: root/pelvis/leg.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R
+        weight: 1
+      - path: root/pelvis/leg.R/shin.R/foot.R
+        weight: 1
+      - path: root/pelvis/spine
+        weight: 1
+      - path: root/pelvis/spine/chest
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/fingers.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.L/shoulder.L/arm.L/hand.L/weapon.L
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/fingers.R
+        weight: 1
+      - path: root/pelvis/spine/chest/clavicle.R/shoulder.R/arm.R/hand.R/weapon.R
+        weight: 1
+      - path: root/pelvis/spine/chest/neck
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.l
+        weight: 1
+      - path: root/pelvis/spine/chest/neck/head/eye.r
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: root
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: leg.L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: leg.R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shin.L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shin.R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot.L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot.R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chest
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle.L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle.R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shoulder.L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shoulder.R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: arm.L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: arm.R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand.L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand.R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: eye.l
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: eye.r
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: CyberMage_01(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cyber_mage_body
+      parentName: CyberMage_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cyber_mage_eyes
+      parentName: CyberMage_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IK
+      parentName: CyberMage_01(Clone)
+      position: {x: -0.21907705, y: 0.47880897, z: 0.14930895}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IK 1
+      parentName: CyberMage_01(Clone)
+      position: {x: 0.22932594, y: 0.41018298, z: -0.00285503}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: root
+      parentName: CyberMage_01(Clone)
+      position: {x: -0.010984376, y: 0, z: 0}
+      rotation: {x: 0.054247398, y: -0, z: -0, w: 0.9985275}
+      scale: {x: 1, y: 0.9999996, z: 0.9999996}
+    - name: leg_ik.L
+      parentName: root
+      position: {x: -0.25182799, y: 0.17907205, z: -0.008648678}
+      rotation: {x: -0.7444243, y: 0, z: -0, w: 0.6677069}
+      scale: {x: 1, y: 1.0000005, z: 1.0000005}
+    - name: leg_pole_trg.L
+      parentName: leg_ik.L
+      position: {x: 0.01848, y: -0.838416, z: 0.316624}
+      rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: leg_ik.R
+      parentName: root
+      position: {x: 0.251829, y: 0.1519093, z: -0.25790212}
+      rotation: {x: -0.7444243, y: 0, z: -0, w: 0.6677069}
+      scale: {x: 1, y: 1.0000005, z: 1.0000005}
+    - name: leg_pole_trg.R
+      parentName: leg_ik.R
+      position: {x: -0.057814997, y: -0.589907, z: 0.316624}
+      rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eyes
+      parentName: root
+      position: {x: 0.047532, y: 2.006276, z: 1.6587716}
+      rotation: {x: 0.15253367, y: 0.01307925, z: -0.0035030926, w: 0.98820555}
+      scale: {x: 0.9999997, y: 1.0000004, z: 1.000001}
+    - name: eye_target.l
+      parentName: eyes
+      position: {x: -0.09969379, y: 0.031748123, z: 0.03174669}
+      rotation: {x: 1.04629546e-16, y: 0.7071068, z: 0.7071068, w: -1.8033937e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eye_target.r
+      parentName: eyes
+      position: {x: 0.09969337, y: 0.031748127, z: 0.031746693}
+      rotation: {x: -0.0000005117606, y: 0.7071068, z: 0.7071068, w: 0.0000001351327}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pelvis
+      parentName: root
+      position: {x: 0.010985, y: 0.72067493, z: -0.17803927}
+      rotation: {x: 0.0036579892, y: 0.00000050338514, z: -0.000000055256713, w: 0.9999933}
+      scale: {x: 1.0000001, y: 1.0000007, z: 1.0000006}
+    - name: spine
+      parentName: pelvis
+      position: {x: -8.479999e-10, y: 0.19940595, z: -0.00000011060724}
+      rotation: {x: -0.07190977, y: -0.000000011630392, z: 5.108087e-10, w: 0.9974112}
+      scale: {x: 1.0000002, y: 0.99999976, z: 1.0000004}
+    - name: chest
+      parentName: spine
+      position: {x: -0.00000016958991, y: 0.108356304, z: -0.00000028917628}
+      rotation: {x: -0.10015757, y: 0.000000011545649, z: 0.0000000014907301, w: 0.99497163}
+      scale: {x: 1.0000001, y: 1.0000004, z: 0.99999994}
+    - name: clavicle.R
+      parentName: chest
+      position: {x: 0.04982196, y: 0.2897597, z: 0.029136447}
+      rotation: {x: 0.20130695, y: 0.3949126, z: -0.6571703, w: 0.60962844}
+      scale: {x: 1, y: 0.99999994, z: 0.9999996}
+    - name: shoulder.R
+      parentName: clavicle.R
+      position: {x: 0.000000016984995, y: 0.14377876, z: 0.0000005048665}
+      rotation: {x: -0.14177115, y: 0.24765459, z: -0.03492077, w: -0.9577833}
+      scale: {x: 0.9999998, y: 0.99999917, z: 0.99999976}
+    - name: arm.R
+      parentName: shoulder.R
+      position: {x: 0.0000006644699, y: 0.35514513, z: 0.00000020128465}
+      rotation: {x: 0.02655656, y: -0.090926, z: 0.031472467, w: 0.9950059}
+      scale: {x: 1.0000002, y: 1.000001, z: 1.0000001}
+    - name: hand.R
+      parentName: arm.R
+      position: {x: -0.00000075124586, y: 0.26772478, z: -0.000000024641018}
+      rotation: {x: -0.029792637, y: -0.72515893, z: 0.0061535537, w: 0.68790925}
+      scale: {x: 1, y: 1.0000001, z: 0.9999998}
+    - name: weapon.R
+      parentName: hand.R
+      position: {x: -0.027090494, y: 0.110006794, z: -0.06690801}
+      rotation: {x: 0.26003277, y: 0.52164096, z: -0.6227462, w: 0.5219778}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000004}
+    - name: fingers.R
+      parentName: hand.R
+      position: {x: 0.00000013135501, y: 0.12852734, z: 0.00000031325325}
+      rotation: {x: -0.16392142, y: 0.15620498, z: 0.100049615, w: 0.9688756}
+      scale: {x: 1.0000006, y: 1, z: 1.0000002}
+    - name: neck
+      parentName: chest
+      position: {x: -0.00000021391982, y: 0.36926097, z: 0.0000010010441}
+      rotation: {x: 0.3547569, y: -0.00000001796509, z: -0.00000007389657, w: 0.9349586}
+      scale: {x: 1, y: 0.9999999, z: 0.9999994}
+    - name: head
+      parentName: neck
+      position: {x: -0.00000013872288, y: 0.10178826, z: -0.00000037328002}
+      rotation: {x: -0.14778018, y: 0.0000000022782136, z: 0.000000005356358, w: 0.9890203}
+      scale: {x: 0.99999934, y: 1, z: 0.99999994}
+    - name: eye.l
+      parentName: head
+      position: {x: -0.09388191, y: 0.15718082, z: 0.1180386}
+      rotation: {x: -0.00000039556392, y: 0.79091495, z: 0.6119261, w: 0.00000030708011}
+      scale: {x: 1.0000013, y: 0.9999999, z: 1.0000001}
+    - name: eye.r
+      parentName: head
+      position: {x: 0.09388183, y: 0.15718158, z: 0.11803952}
+      rotation: {x: -0.00000039542948, y: 0.79091495, z: 0.6119261, w: 0.00000030755112}
+      scale: {x: 1.0000017, y: 0.9999996, z: 0.9999999}
+    - name: clavicle.L
+      parentName: chest
+      position: {x: -0.049822226, y: 0.28975937, z: 0.029136164}
+      rotation: {x: 0.20130618, y: -0.39491323, z: 0.65717036, w: 0.60962814}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.9999997}
+    - name: shoulder.L
+      parentName: clavicle.L
+      position: {x: 0.0000003160418, y: 0.14377876, z: -0.00000030480436}
+      rotation: {x: 0.14177085, y: 0.24765395, z: -0.03491845, w: 0.9577835}
+      scale: {x: 0.99999946, y: 0.9999992, z: 1.0000004}
+    - name: arm.L
+      parentName: shoulder.L
+      position: {x: 0.000000674406, y: 0.3551451, z: -0.000000001916777}
+      rotation: {x: 0.026556894, y: 0.09092574, z: -0.031477246, w: 0.99500585}
+      scale: {x: 1.0000007, y: 1.0000006, z: 0.99999994}
+    - name: hand.L
+      parentName: arm.L
+      position: {x: -0.0000010470965, y: 0.26772502, z: -0.0000004279309}
+      rotation: {x: -0.029792707, y: 0.7251589, z: -0.0061535975, w: 0.68790936}
+      scale: {x: 1.0000005, y: 1.0000014, z: 0.9999998}
+    - name: weapon.L
+      parentName: hand.L
+      position: {x: 0.027089821, y: 0.110007465, z: -0.06690845}
+      rotation: {x: 0.26003316, y: -0.521641, z: 0.62274605, w: 0.5219777}
+      scale: {x: 1.0000005, y: 1.0000002, z: 0.99999976}
+    - name: fingers.L
+      parentName: hand.L
+      position: {x: -0.00000081856007, y: 0.12852839, z: -0.00000039678076}
+      rotation: {x: -0.16392143, y: -0.1562049, z: -0.10004965, w: 0.96887565}
+      scale: {x: 1, y: 1.0000002, z: 0.99999994}
+    - name: leg.L
+      parentName: pelvis
+      position: {x: -0.1233589, y: 0.15699938, z: 0.002432975}
+      rotation: {x: -0.012849645, y: 0.048615262, z: 0.9974693, w: 0.050264344}
+      scale: {x: 0.99999, y: 1.0000006, z: 0.99999046}
+    - name: shin.L
+      parentName: leg.L
+      position: {x: 0.000004300819, y: 0.4780213, z: -0.000004104638}
+      rotation: {x: -0.1392061, y: 0.035182994, z: 0.02210866, w: 0.9893912}
+      scale: {x: 0.99999875, y: 0.9999975, z: 1.0000018}
+    - name: foot.L
+      parentName: shin.L
+      position: {x: -0.000005244268, y: 0.3319345, z: -0.0000010117216}
+      rotation: {x: 0.5880493, y: 0.011801841, z: -0.005163062, w: 0.80872256}
+      scale: {x: 0.9999955, y: 0.99999774, z: 1.0000014}
+    - name: leg.R
+      parentName: pelvis
+      position: {x: 0.12335761, y: 0.1569989, z: 0.0024335517}
+      rotation: {x: 0.012855993, y: 0.048616014, z: 0.99746925, w: -0.050263498}
+      scale: {x: 1.0000157, y: 0.99999994, z: 1.0000116}
+    - name: shin.R
+      parentName: leg.R
+      position: {x: 0.0000017385225, y: 0.47802058, z: 0.0000027325245}
+      rotation: {x: -0.13920552, y: -0.035183217, z: -0.022108477, w: 0.9893913}
+      scale: {x: 1.0000026, y: 1.0000049, z: 0.9999965}
+    - name: foot.R
+      parentName: shin.R
+      position: {x: -0.000008721477, y: 0.3319351, z: 0.0000019489128}
+      rotation: {x: 0.5880472, y: -0.011801243, z: 0.0051628402, w: 0.808724}
+      scale: {x: 1.0000061, y: 1.000003, z: 0.9999998}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
