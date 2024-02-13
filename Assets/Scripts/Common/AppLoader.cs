@@ -6,7 +6,6 @@ namespace Scripts.CommonCode
     {
         private void Start()
         {
-            DependencyStorage.AssetLoader.LoadAssets();
             GameManager.GameStartAction?.Invoke();
         }
     }

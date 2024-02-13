@@ -67,19 +67,40 @@ namespace Scripts.PlayerCode
 		private void SetStartingStats()
         {
 			var tmp = gameStorage.GameBaseParameters.Stats;
-			concretePlayer.HeroStats.UpdateStats(tmp.BaseHealth, tmp.BaseDamage, tmp.BaseDPS);
+			concretePlayer.HeroStats.UpdateStats(tmp.BaseHealth, tmp.BaseDamage, tmp.BaseAttackSpeed);
 		}
 
 		public void UpdateStats(WeaponLevelSettings weaponLevelSettings)
 		{
 			var tmp = gameStorage.GameBaseParameters.Stats;
-			concretePlayer.UpdateHeroStats(tmp.BaseHealth + weaponLevelSettings.Health, tmp.BaseDamage + weaponLevelSettings.Damage, tmp.BaseDPS + (weaponLevelSettings.Damage * weaponLevelSettings.AttackSpped));
+			concretePlayer.UpdateHeroStats(tmp.BaseHealth, tmp.BaseDamage, weaponLevelSettings.AttackSpped);
 		}
 
-		public void ResetStats(WeaponLevelSettings weaponLevelSettings)
+		public void TakeStats(WeaponLevelSettings weaponLevelSettings)
 		{
 			var tmp = gameStorage.GameBaseParameters.Stats;
-			concretePlayer.UpdateHeroStats(tmp.BaseHealth, tmp.BaseDamage, tmp.BaseDPS);
+			concretePlayer.TakeeHeroStats(tmp.BaseHealth, tmp.BaseDamage, weaponLevelSettings.AttackSpped);
+		}
+
+		public void EquipWeapon(HeroWeapon _weapon)
+		{
+			concretePlayer.GameWeapons.ForEach(w => w.TakeOFf());
+			concretePlayer.GameWeapons.Find(w => w.HeroWeaponType == _weapon.HeroWeaponType).Equip();
+		}
+
+		public void TakeOffWeapon(HeroWeapon _weapon)
+		{
+			concretePlayer.GameWeapons.ForEach(w => w.TakeOFf());
+		}
+
+		public void BuyHealthStat(int _health)
+		{
+			concretePlayer.BuyHealthStat(_health);
+		}
+
+		public void BuyDamageStat(int _damage)
+		{
+			concretePlayer.BuyDamageStat(_damage);
 		}
 	}
 }

@@ -30,15 +30,13 @@ namespace Scripts.CombatCode
 		{
 			DependencyStorage.BulletPool = this;
 			PreparePool();
-		}
-
-		private void OnEnable()
-		{
+			//GameManager.LevelStartAction += PreparePool;
 			ShotBulletAction += Shot;
 		}
 
-		private void OnDisable()
-		{
+        private void OnDestroy()
+        {
+			//GameManager.LevelStartAction -= PreparePool;
 			ShotBulletAction -= Shot;
 		}
 

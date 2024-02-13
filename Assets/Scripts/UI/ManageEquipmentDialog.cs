@@ -8,6 +8,9 @@ namespace Scripts.UserInterface
 {
     public class ManageEquipmentDialog : MonoBehaviour
     {
+        [Header("Storages")]
+        [SerializeField] private GameStorage gameStorage;
+
         [Header("Components")]
         [SerializeField] private Transform container;
         [SerializeField] private Image icon;
@@ -109,17 +112,27 @@ namespace Scripts.UserInterface
         {
             if (heroWeapon.Equiped)
             {
-                heroWeapon.TakeOFf();
-                DependencyStorage.PlayerStorage.ResetStats(weaponLevelSettingsn);
-
+                DependencyStorage.PlayerStorage.TakeOffWeapon(heroWeapon);
+                DependencyStorage.PlayerStorage.TakeStats(weaponLevelSettingsn);
             }
             else
             {
-                heroWeapon.Equip();
+                CheckEquiped();
+                DependencyStorage.PlayerStorage.EquipWeapon(heroWeapon);
                 DependencyStorage.PlayerStorage.UpdateStats(weaponLevelSettingsn);
             }
             UpdateInfo();
             GameManager.EquipWeaponAction?.Invoke();
+        }
+
+        private void CheckEquiped()
+        {
+            var equiped = DependencyStorage.PlayerStorage.ConcretePlayer.GetEquipedWeapon();
+            if (equiped != null)
+            {
+                var tmp = gameStorage.GameBaseParameters.WeaponSettings.Find(w => w.HeroWeaponType == equiped.HeroWeaponType).WeaponLevelSettings.Find(l => l.Level == equiped.Level);
+                DependencyStorage.PlayerStorage.TakeStats(tmp);
+            }
         }
 
         private void ResetButtonReaction()

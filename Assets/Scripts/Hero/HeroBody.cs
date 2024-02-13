@@ -25,7 +25,11 @@ namespace Scripts.PlayerCode
 
         private void LoadWeapon()
         {
-            Instantiate(DependencyStorage.AssetLoader.GetAssetHandle(AssetType.WeaponAsset).Result, weaponPoint);
+            var weapons = DependencyStorage.PlayerStorage.ConcretePlayer.GameWeapons;
+            for (int i = 0; i < weapons.Count; i++)
+            {
+                Instantiate(DependencyStorage.AssetLoader.GetWeaponAssetHandle(weapons[i].HeroWeaponType).Result, weaponPoint);
+            }
         }
 
         public void InitWeapon(WeaponController _weaponController)

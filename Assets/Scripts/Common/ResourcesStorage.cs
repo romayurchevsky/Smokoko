@@ -1,3 +1,4 @@
+using Scripts.PlayerCode;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,15 @@ namespace Scripts.CommonCode
     public class ResourcesStorage : ScriptableObject
     {
         [field: SerializeField] public List<GameAsset> GameAssets { get; private set; } = new List<GameAsset>();
+        [field: SerializeField] public List<WeaponAsset> WeaponAssets { get; private set; } = new List<WeaponAsset>();
         [field: SerializeField] public List<GameScene> GameScenes { get; private set; } = new List<GameScene>();
+    }
+
+    [Serializable]
+    public class WeaponAsset
+    {
+        [field: SerializeField] public HeroWeaponType WeaponType { get; private set; }
+        [field: SerializeField] public AssetReference GameSceneAsset { get; private set; }
     }
 
     [Serializable]
@@ -41,7 +50,6 @@ namespace Scripts.CommonCode
         HeroBodyAsset,
         EnemyAsset,
         BulletAsset,
-        WeaponAsset
     }
 
 }

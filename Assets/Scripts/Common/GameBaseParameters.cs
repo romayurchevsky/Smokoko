@@ -18,7 +18,7 @@ namespace Scripts.CommonCode
 	{
 		[field: SerializeField] public int BaseHealth { get; private set; }
 		[field: SerializeField] public int BaseDamage { get; private set; }
-		[field: SerializeField] public int BaseDPS { get; private set; }
+		[field: SerializeField] public float BaseAttackSpeed { get; private set; }
 	}
 
 	[Serializable]
@@ -37,7 +37,7 @@ namespace Scripts.CommonCode
 		[field: SerializeField] public int Level { get; private set; }
 		[field: SerializeField] public int Damage { get; private set; }
 		[field: SerializeField] public int Health { get; private set; }
-		[field: SerializeField] public int AttackSpped { get; private set; }
+		[field: SerializeField] public float AttackSpped { get; private set; }
 		[field: SerializeField] public int Coast { get; private set; }
 	}
 }

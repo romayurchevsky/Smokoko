@@ -49,9 +49,22 @@ MonoBehaviour:
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0
-  - <AssetType>k__BackingField: 6
+  <WeaponAssets>k__BackingField:
+  - <WeaponType>k__BackingField: 1
     <GameSceneAsset>k__BackingField:
       m_AssetGUID: 9e39bc496a4fa754fa9bf0f21ad73d25
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - <WeaponType>k__BackingField: 2
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: 339f46a447877a94cbb1ef86ff0f36ae
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - <WeaponType>k__BackingField: 3
+    <GameSceneAsset>k__BackingField:
+      m_AssetGUID: 375c016f688e53c4f86cf6b5d3b2d644
       m_SubObjectName: 
       m_SubObjectType: 
       m_EditorAssetChanged: 0

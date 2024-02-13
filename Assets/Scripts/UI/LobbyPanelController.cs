@@ -13,6 +13,10 @@ namespace Scripts.UserInterface
         [Header("Components")]
         [SerializeField] private Button playButton;
         [SerializeField] private Button inventoryButton;
+        [SerializeField] private Button addCoinsButton;
+        [SerializeField] private Button takeCoinsButton;        
+        [SerializeField] private Button upgradeHealthButton;
+        [SerializeField] private Button ugradeDamageButton;
         [SerializeField] private TMP_Text damageText;
         [SerializeField] private List<LobbyPanel> lobbyPanels = new List<LobbyPanel>();
 
@@ -27,6 +31,7 @@ namespace Scripts.UserInterface
 
             GameManager.LobbyStartAction += SetParameters;
             DependencyStorage.PlayerStorage.ConcretePlayer.UpdateStats += SetParameters;
+            DependencyStorage.PlayerStorage.ConcretePlayer.ChangeCoinsCount += UpdateBuyButtons;
             ShowLobbyPanelAction += ShowLobbyPanel;
         }
 
@@ -34,6 +39,7 @@ namespace Scripts.UserInterface
         {
             GameManager.LobbyStartAction -= SetParameters;
             DependencyStorage.PlayerStorage.ConcretePlayer.UpdateStats -= SetParameters;
+            DependencyStorage.PlayerStorage.ConcretePlayer.ChangeCoinsCount -= UpdateBuyButtons;
             ShowLobbyPanelAction -= ShowLobbyPanel;
         }
 
@@ -50,10 +56,37 @@ namespace Scripts.UserInterface
             {
                 ShowLobbyPanelAction?.Invoke(LobbyPanelType.Inventory);
             });
+
+            addCoinsButton.onClick.RemoveAllListeners();
+            addCoinsButton.onClick.AddListener(() =>
+            {
+                DependencyStorage.PlayerStorage.ConcretePlayer.AddCoins(100);
+            });
+
+            takeCoinsButton.onClick.RemoveAllListeners();
+            takeCoinsButton.onClick.AddListener(() =>
+            {
+                DependencyStorage.PlayerStorage.ConcretePlayer.TakeCoins(100);
+            });
+
+            upgradeHealthButton.onClick.RemoveAllListeners();
+            upgradeHealthButton.onClick.AddListener(() =>
+            {
+                DependencyStorage.PlayerStorage.ConcretePlayer.TakeCoins(100);
+                DependencyStorage.PlayerStorage.BuyHealthStat(10);
+            });
+
+            ugradeDamageButton.onClick.RemoveAllListeners();
+            ugradeDamageButton.onClick.AddListener(() =>
+            {
+                DependencyStorage.PlayerStorage.ConcretePlayer.TakeCoins(100);
+                DependencyStorage.PlayerStorage.BuyDamageStat(1);
+            });
         }
 
         private void SetParameters()
         {
+            UpdateBuyButtons();
             damageText.text = $"{DependencyStorage.PlayerStorage.ConcretePlayer.HeroStats.DPS}";
         }
 
@@ -61,6 +94,12 @@ namespace Scripts.UserInterface
         {
             lobbyPanels.ForEach(p => p.Panel.gameObject.SetActive(false));
             lobbyPanels.Find(p => p.LobbyPanelType == lobbyPanelType).Panel.gameObject.SetActive(true);
+        }
+
+        private void UpdateBuyButtons()
+        {
+            upgradeHealthButton.interactable = DependencyStorage.PlayerStorage.ConcretePlayer.CurrentCoins >= 100;
+            ugradeDamageButton.interactable = DependencyStorage.PlayerStorage.ConcretePlayer.CurrentCoins >= 100;
         }
     }
 

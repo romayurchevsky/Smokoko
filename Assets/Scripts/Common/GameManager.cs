@@ -26,7 +26,6 @@ namespace Scripts.CommonCode
 		#endregion
 
 		#region Variables
-		private GameSceneType gameSceneType;
 		#endregion
 
 		private void Awake()
@@ -37,15 +36,11 @@ namespace Scripts.CommonCode
 		private void OnEnable()
 		{
 			GameStartAction += StartGame;
-			LobbyPrepereAction += LobbyStart;
-			LevelPrepereAction += LevelStart;
 		}
 
 		private void OnDisable()
 		{
 			GameStartAction -= StartGame;
-			LobbyPrepereAction -= LobbyStart;
-			LevelPrepereAction -= LevelStart;
 		}
 
 		private void OnApplicationQuit()
@@ -69,51 +64,6 @@ namespace Scripts.CommonCode
 		private void StartGame()
 		{
 			DependencyStorage.PlayerStorage.LoadPlayer();
-		}
-
-		private void LobbyStart()
-		{
-			LoadScene(GameSceneType.Lobby);
-		}
-
-		private void LevelStart()
-        {
-			LoadScene(GameSceneType.Gameplay);
-		}
-
-		private async void LoadScene(GameSceneType _gameSceneType)
-        {
-			gameSceneType = _gameSceneType;
-			var handle = Addressables.LoadSceneAsync(GetGameScene(_gameSceneType), LoadSceneMode.Single);
-			handle.Completed += OnSceneLoaded;
-			await handle.Task;
-        }
-
-		void OnSceneLoaded(AsyncOperationHandle<SceneInstance> _scene)
-		{
-			if (_scene.Status == AsyncOperationStatus.Succeeded)
-			{
-                switch (gameSceneType)
-                {
-                    case GameSceneType.Lobby:
-						LobbyStartAction?.Invoke();
-						break;
-                    case GameSceneType.Gameplay:
-						LevelStartAction?.Invoke();
-						break;
-                    default:
-                        break;
-                }
-            }
-			else
-			{
-				Debug.LogError("Failed to load scene at address: " + _scene.DebugName);
-			}
-		}
-
-		private AssetReference GetGameScene(GameSceneType _gameSceneType)
-        {
-			return resourcesStorage.GameScenes.Find(s => s.GameSceneType == _gameSceneType).GameSceneAsset;
 		}
 	}
 }

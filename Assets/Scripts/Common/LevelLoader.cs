@@ -14,7 +14,14 @@ namespace Scripts.LevelCode
 
         private void Awake()
         {
-            LoadLevel();
+            //LoadLevel();
+
+            GameManager.LevelStartAction += LoadLevel;
+        }
+
+        private void OnDestroy()
+        {
+            GameManager.LevelStartAction -= LoadLevel;
         }
 
         private void LoadLevel()

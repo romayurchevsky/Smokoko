@@ -1084,7 +1084,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!111 &1282208953782998041
 Animation:
   m_ObjectHideFlags: 0
@@ -1114,7 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 575ef47a97f70a145842270276d09a1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStorage: {fileID: 11400000, guid: 2136c975d4d12f249ab29227fe349ac3, type: 2}
+  gameStorage: {fileID: 11400000, guid: 91b705d1196d9164db0644fef8ea85ff, type: 2}
   container: {fileID: 7514983754392243229}
   icon: {fileID: 5469124247691643706}
   iconLevelText: {fileID: 7734365416272320739}

@@ -49,8 +49,12 @@ MonoBehaviour:
     m_Address: Assets/Prefab/Hero/LobbyHero.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 9e39bc496a4fa754fa9bf0f21ad73d25
-    m_Address: Assets/Prefab/Weapon.prefab
+  - m_GUID: 339f46a447877a94cbb1ef86ff0f36ae
+    m_Address: Assets/Prefab/Weapon/Weapon_02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 375c016f688e53c4f86cf6b5d3b2d644
+    m_Address: Assets/Prefab/Weapon/Weapon_03.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

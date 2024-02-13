@@ -2,11 +2,13 @@ using Scripts.CombatCode;
 using Scripts.CommonCode;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour, ITarget
 {
     [Header("Components")]
     [SerializeField] private Transform cross;
+    [SerializeField] private Slider healthSlider;
 
     [Header("PArameters")]
     [SerializeField] private int startingHP;
@@ -26,12 +28,14 @@ public class EnemyController : MonoBehaviour, ITarget
     {
         targetStorage.RegisterEnemy(this);
         currentHP = startingHP;
+        SetUi();
         SelectTarget(false);
     }
 
     private void EnemyDie()
     {
         targetStorage.UnregisterEnemy(this);
+        healthSlider.gameObject.SetActive(false);
     }
 
     private void DamageAnimation()
@@ -47,6 +51,11 @@ public class EnemyController : MonoBehaviour, ITarget
         transform.localScale = tnpScale;
     }
 
+    private void SetUi()
+    {
+        healthSlider.value = currentHP;
+    }
+
     #region ITarget
     public Transform TargetTransform => transform;
 
@@ -55,6 +64,7 @@ public class EnemyController : MonoBehaviour, ITarget
     public void GetDamage(int _damage, Vector3 _from)
     {
         currentHP -= _damage;
+        SetUi();
         if (currentHP > 0)
         {
             DamageAnimation();

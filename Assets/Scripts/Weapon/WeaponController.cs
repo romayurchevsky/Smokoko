@@ -25,8 +25,9 @@ namespace Scripts.CombatCode
 
         protected virtual void Awake()
         {
-            DependencyStorage.BaseHeroController.InitWeapon(this);
             container.gameObject.SetActive(false);
+
+            CheckWeapon();
 
             GameManager.LobbyStartAction += CheckWeapon;
             GameManager.LevelStartAction += CheckWeapon;
@@ -43,6 +44,7 @@ namespace Scripts.CombatCode
         public void Equip()
         {
             container.gameObject.SetActive(true);
+            DependencyStorage.BaseHeroController.InitWeapon(this);
         }
 
         public void Hide()
@@ -65,7 +67,7 @@ namespace Scripts.CombatCode
         private void CheckWeapon()
         {
             heroWeapon = DependencyStorage.PlayerStorage.ConcretePlayer.GetEquipedWeapon();
-            if (heroWeapon != null)
+            if (heroWeapon != null && heroWeapon.HeroWeaponType == heroWeaponType)
             {
                 Equip();
             }

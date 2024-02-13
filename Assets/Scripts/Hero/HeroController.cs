@@ -15,7 +15,6 @@ namespace Scripts.PlayerCode
         [SerializeField] private float speedFactor = 1f;
         [SerializeField] private float rotationFactor = 1f;
         [SerializeField] private float enemyDetectRadius = 1f;
-        [SerializeField] private float attackDelay = 1f;
 
         #region Variables
         private Joystick joystick;
@@ -32,15 +31,16 @@ namespace Scripts.PlayerCode
         {
             base.Awake();
 
-            GameManager.LevelStartAction += SetParameters;
+            SetParameters();
+            //GameManager.LevelStartAction += SetParameters;
             Joystick.PointerDownAction += PointerDownReaction;
             Joystick.PointerUpAction += PointerUpReaction;
         }
 
         private void OnDestroy()
         {
-            GameManager.LevelStartAction -= SetParameters;
-            if (heroBody != null) heroBody.HeroAnimatorController.EndAttackAction -= EndAttackAnimation;
+            //GameManager.LevelStartAction -= SetParameters;
+            if (heroBody != null) heroBody.HeroAnimatorController.AttackMomentAction -= AttackMomentAnimation;
             Joystick.PointerDownAction -= PointerDownReaction;
             Joystick.PointerUpAction -= PointerUpReaction;
         }
@@ -54,7 +54,7 @@ namespace Scripts.PlayerCode
         public override void InitBody(HeroBody _heroBody)
         {
             base.InitBody(_heroBody);
-            _heroBody.HeroAnimatorController.EndAttackAction += EndAttackAnimation;
+            _heroBody.HeroAnimatorController.AttackMomentAction += AttackMomentAnimation;
         }
 
         private void SetParameters()
@@ -123,17 +123,18 @@ namespace Scripts.PlayerCode
         {
             inAttack = true;
             heroBody.HeroAnimatorController.Attack(0);
+            StartCoroutine(AttackDelay());
         }
 
-        public void EndAttackAnimation()
+        public void AttackMomentAnimation()
         {
             heroBody.Attack(currentEnemy);
-            StartCoroutine(AttackDelay());
+            
         }
 
         private IEnumerator AttackDelay()
         {
-            yield return new WaitForSeconds(attackDelay);
+            yield return new WaitForSeconds(DependencyStorage.PlayerStorage.ConcretePlayer.HeroStats.AttackSpeed);
             inAttack = false;
         }
 

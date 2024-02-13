@@ -18,7 +18,7 @@ namespace Scripts.PlayerCode
 		#endregion
 
 		#region Actions
-		public Action EndAttackAction;
+		public Action AttackMomentAction;
 		#endregion
 
 		public void SetSpeed(float _speed)
@@ -48,9 +48,9 @@ namespace Scripts.PlayerCode
 			playerAnimator.SetTrigger(toRunKey);
 		}
 
-		public void EndAttack()
+		public void AttackMoment()
 		{
-			EndAttackAction?.Invoke();
+			AttackMomentAction?.Invoke();
 		}
 
 		public void Die()

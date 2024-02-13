@@ -16,36 +16,96 @@ MonoBehaviour:
     <Stats>k__BackingField:
       <BaseHealth>k__BackingField: 100
       <BaseDamage>k__BackingField: 10
-      <BaseDPS>k__BackingField: 1
+      <BaseAttackSpeed>k__BackingField: 5
     <WeaponSettings>k__BackingField:
     - <HeroWeaponType>k__BackingField: 1
-      <Icon>k__BackingField: {fileID: 21300000, guid: 648a687cabef85142be058a475a7de6c, type: 3}
-      <WeaponName>k__BackingField: GunSword
+      <Icon>k__BackingField: {fileID: 21300000, guid: c8a69ecdf54ac8e4b873466605de27ff, type: 3}
+      <WeaponName>k__BackingField: Weapon_01
       <MaxLevel>k__BackingField: 5
       <WeaponLevelSettings>k__BackingField:
       - <Level>k__BackingField: 1
         <Damage>k__BackingField: 2
         <Health>k__BackingField: 10
-        <AttackSpped>k__BackingField: 0
+        <AttackSpped>k__BackingField: 2.5
         <Coast>k__BackingField: 100
       - <Level>k__BackingField: 2
         <Damage>k__BackingField: 4
         <Health>k__BackingField: 20
-        <AttackSpped>k__BackingField: 0
+        <AttackSpped>k__BackingField: 2.2
         <Coast>k__BackingField: 200
       - <Level>k__BackingField: 3
         <Damage>k__BackingField: 8
         <Health>k__BackingField: 30
-        <AttackSpped>k__BackingField: 0
+        <AttackSpped>k__BackingField: 1.9
         <Coast>k__BackingField: 300
       - <Level>k__BackingField: 4
         <Damage>k__BackingField: 10
         <Health>k__BackingField: 40
-        <AttackSpped>k__BackingField: 0
+        <AttackSpped>k__BackingField: 1.7
         <Coast>k__BackingField: 400
       - <Level>k__BackingField: 5
         <Damage>k__BackingField: 12
         <Health>k__BackingField: 50
-        <AttackSpped>k__BackingField: 0
+        <AttackSpped>k__BackingField: 1.5
         <Coast>k__BackingField: 500
-    <StartingWeapons>k__BackingField: 01000000
+    - <HeroWeaponType>k__BackingField: 2
+      <Icon>k__BackingField: {fileID: 21300000, guid: cdb88fdb0cf46b244a667edaff21c7df, type: 3}
+      <WeaponName>k__BackingField: Weapon_02
+      <MaxLevel>k__BackingField: 5
+      <WeaponLevelSettings>k__BackingField:
+      - <Level>k__BackingField: 1
+        <Damage>k__BackingField: 2
+        <Health>k__BackingField: 10
+        <AttackSpped>k__BackingField: 2.2
+        <Coast>k__BackingField: 100
+      - <Level>k__BackingField: 2
+        <Damage>k__BackingField: 4
+        <Health>k__BackingField: 20
+        <AttackSpped>k__BackingField: 1.9
+        <Coast>k__BackingField: 200
+      - <Level>k__BackingField: 3
+        <Damage>k__BackingField: 8
+        <Health>k__BackingField: 30
+        <AttackSpped>k__BackingField: 1.6
+        <Coast>k__BackingField: 300
+      - <Level>k__BackingField: 4
+        <Damage>k__BackingField: 10
+        <Health>k__BackingField: 40
+        <AttackSpped>k__BackingField: 1.3
+        <Coast>k__BackingField: 400
+      - <Level>k__BackingField: 5
+        <Damage>k__BackingField: 12
+        <Health>k__BackingField: 50
+        <AttackSpped>k__BackingField: 1
+        <Coast>k__BackingField: 500
+    - <HeroWeaponType>k__BackingField: 3
+      <Icon>k__BackingField: {fileID: 21300000, guid: c9ed6d6ea2f9657409bfa068d4846139, type: 3}
+      <WeaponName>k__BackingField: Weapon_03
+      <MaxLevel>k__BackingField: 5
+      <WeaponLevelSettings>k__BackingField:
+      - <Level>k__BackingField: 1
+        <Damage>k__BackingField: 2
+        <Health>k__BackingField: 10
+        <AttackSpped>k__BackingField: 1.7
+        <Coast>k__BackingField: 100
+      - <Level>k__BackingField: 2
+        <Damage>k__BackingField: 4
+        <Health>k__BackingField: 20
+        <AttackSpped>k__BackingField: 1.4
+        <Coast>k__BackingField: 200
+      - <Level>k__BackingField: 3
+        <Damage>k__BackingField: 8
+        <Health>k__BackingField: 30
+        <AttackSpped>k__BackingField: 1.1
+        <Coast>k__BackingField: 300
+      - <Level>k__BackingField: 4
+        <Damage>k__BackingField: 10
+        <Health>k__BackingField: 40
+        <AttackSpped>k__BackingField: 0.8
+        <Coast>k__BackingField: 400
+      - <Level>k__BackingField: 5
+        <Damage>k__BackingField: 12
+        <Health>k__BackingField: 50
+        <AttackSpped>k__BackingField: 0.5
+        <Coast>k__BackingField: 500
+    <StartingWeapons>k__BackingField: 010000000200000003000000

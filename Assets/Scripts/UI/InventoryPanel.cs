@@ -15,8 +15,6 @@ namespace Scripts.UserInterface
 
         [Header("Components")]
         [SerializeField] private Button lobbysButton;
-        [SerializeField] private Button addCoinsButton;
-        [SerializeField] private Button takeCoinsButton;
         [SerializeField] private TMP_Text healthText;
         [SerializeField] private TMP_Text damageText;
         [SerializeField] private List<InventorySlot> inventorySlots = new List<InventorySlot>();
@@ -66,17 +64,7 @@ namespace Scripts.UserInterface
 
         private void PrepereButtons()
         {
-            addCoinsButton.onClick.RemoveAllListeners();
-            addCoinsButton.onClick.AddListener(() =>
-            {
-                DependencyStorage.PlayerStorage.ConcretePlayer.AddCoins(100);
-            });
 
-            takeCoinsButton.onClick.RemoveAllListeners();
-            takeCoinsButton.onClick.AddListener(() =>
-            {
-                DependencyStorage.PlayerStorage.ConcretePlayer.TakeCoins(100);
-            });
 
             lobbysButton.onClick.RemoveAllListeners();
             lobbysButton.onClick.AddListener(() =>

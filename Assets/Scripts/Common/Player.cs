@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Scripts.PlayerCode
 {
-	[Serializable]
+    [Serializable]
 	public class Player
 	{
 		[field: SerializeField] public int CurrentLevel { get; private set; } = 0;
@@ -34,25 +34,62 @@ namespace Scripts.PlayerCode
 			return GameWeapons.Find(w => w.Equiped);
 		}
 
-		public void UpdateHeroStats(int _health, int _damage, int _dps)
+		public void UpdateHeroStats(int _health, int _damage, float _attackSpeed)
 		{
-			HeroStats.UpdateStats(_health, _damage, _dps);
+			HeroStats.UpdateStats(_health, _damage, _attackSpeed);
 			UpdateStats?.Invoke();
-	}
+		}
+		public void TakeeHeroStats(int _health, int _damage, float _attackSpeed)
+		{
+			HeroStats.TakeStats(_health, _damage, _attackSpeed);
+			UpdateStats?.Invoke();
+		}
+
+		public void BuyHealthStat(int _health)
+		{
+			HeroStats.BuyHealthStat(_health);
+			UpdateStats?.Invoke();
+		}
+
+		public void BuyDamageStat(int _damage)
+		{
+			HeroStats.BuyDamageStat(_damage);
+			UpdateStats?.Invoke();
+		}
 	}
 
 	[Serializable]
 	public class HeroStats
     {
 		[field: SerializeField] public int Health { get; private set; } 
-		[field: SerializeField] public int Damage { get; private set; } 
-		[field: SerializeField] public int DPS { get; private set; }
+		[field: SerializeField] public int Damage { get; private set; } 		
+		[field: SerializeField] public float AttackSpeed { get; private set; } 
+		[field: SerializeField] public float DPS { get; private set; }
 
-		public void UpdateStats(int _health, int _damage, int _dps)
+		public void UpdateStats(int _health, int _damage, float _attackSpeed)
         {
-			Health = _health;
-			Damage = _damage;
-			DPS = _dps;
+			Health += _health;
+			Damage += _damage;
+			AttackSpeed = _attackSpeed;
+			DPS = Mathf.Round((Damage / AttackSpeed) * 10f) * 0.1f;
+		}
+
+		public void TakeStats(int _health, int _damage, float _attackSpeed)
+		{
+			Health -= _health;
+			Damage -= _damage;
+			AttackSpeed -= _attackSpeed;
+			DPS = Mathf.Round((Damage / AttackSpeed) * 10f) * 0.1f;
+		}
+
+		public void BuyHealthStat(int _health)
+		{
+			Health += _health;
+		}
+
+		public void BuyDamageStat(int _damage)
+		{
+			Damage += _damage;
 		}
 	}
 
@@ -92,6 +129,8 @@ namespace Scripts.PlayerCode
 	public enum HeroWeaponType
     {
 		None,
-		Weapon_01
+		Weapon_01,
+		Weapon_02,
+		Weapon_03,
     }
 }
